@@ -1,0 +1,242 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 2DMD_DISPLAY & G ANALYSE 2011"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "2DMD_MC ANALYSIS Version 1.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011 JMZ, AS and AM",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY2DMD_DISPLAY_DIALOG DIALOGEX 0, 0, 850, 550
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "2DMD_DISPLAY & GLOBAL ANALYSIS 2013"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,775,7,74,34
+    EDITTEXT        IDC_IN_inputname,86,7,61,14,ES_AUTOHSCROLL
+    LTEXT           " << filename",IDC_STATIC,151,9,48,9
+    LTEXT           "intensity shift >>",IDC_STATIC,86,41,51,10
+    EDITTEXT        IDC_IN_shift,139,41,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IN_gain,139,26,49,12,ES_AUTOHSCROLL
+    LTEXT           "intensity gain >>",IDC_STATIC,85,28,52,10
+    PUSHBUTTON      "Disp MC Hist Seq.(3A)",IDC_LOADRESP,7,58,37,30,BS_MULTILINE
+    LTEXT           "first frame",IDC_STATIC,216,9,31,8
+    LTEXT           "last frame",IDC_STATIC,290,9,31,8
+    EDITTEXT        IDC_IN_first,249,7,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IN_last,269,7,17,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Calc MC Hist (2A)",IDC_SHOWRESEQ,7,27,37,31,BS_MULTILINE
+    PUSHBUTTON      "Averaged response",IDC_AVERRESP,776,43,73,31
+    EDITTEXT        IDC_IN_thresh,84,57,49,12,ES_AUTOHSCROLL
+    LTEXT           "<< NL threshold",IDC_STATIC,140,59,51,10
+    PUSHBUTTON      "segre or transp? (4)",IDC_LOADRESP2,701,43,70,31,BS_MULTILINE
+    LTEXT           "Histogram Calculations",IDC_STATIC,405,41,57,21
+    EDITTEXT        IDC_STATUS_HIST,454,41,78,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HISTTYPE,252,27,20,14,ES_AUTOHSCROLL
+    LTEXT           "Histogram type: 0=Full, 1=Hi-Res, 2=amplitude/direction",IDC_STATIC,273,19,83,35
+    EDITTEXT        IDC_Out_Circ,295,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_In_Circ,295,57,40,14,ES_AUTOHSCROLL
+    LTEXT           "Outer Circle Radius",IDC_STATIC,230,50,62,8
+    LTEXT           "Inner Circle Radius",IDC_STATIC,231,60,60,8
+    PUSHBUTTON      "Load and display input sequence(1)",IDC_LOADRESP3,7,7,73,20,BS_MULTILINE
+    PUSHBUTTON      "Calc comb Hist(2B)",IDC_CALC_combH,44,27,37,31,BS_MULTILINE
+    PUSHBUTTON      "Disp comb Hist Seq.(3B)",IDC_SHOW_combH,44,58,37,30,BS_MULTILINE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "2DMD_DISPLAY MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "2DMD_DISPLAY"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "2DMD_DISPLAY.EXE"
+            VALUE "ProductName", "2DMD_DISPLAY Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY2DMD_DISPLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 771
+        VERTGUIDE, 272
+        VERTGUIDE, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 479
+        HORZGUIDE, 41
+        HORZGUIDE, 58
+        HORZGUIDE, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About 2DMD_DISPLAY..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\2DMD_DISPLAY.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\2DMD_DISPLAY.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\2DMD_DISPLAY.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

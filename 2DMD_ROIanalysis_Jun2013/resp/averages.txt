@@ -1,0 +1,5 @@
+Region of interest outer circle: 0 | inner circle: 0 
+Channel 0 | Pixels in region:     0 | average hor:     0 | average ver:     0 
+Channel 1 | Pixels in region:     0 | average hor:     0 | average ver:     0 
+Channel 2 | Pixels in region:     0 | average hor:     0 | average ver:     0 
+Channel 3 | Pixels in region:     0 | average hor:     0 | average ver:     0 

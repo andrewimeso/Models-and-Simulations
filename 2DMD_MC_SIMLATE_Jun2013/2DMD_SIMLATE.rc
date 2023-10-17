@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 2DMD_MC SIMLATE"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "2DMD_MC SIMLATE Version 4.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013 JMZ, AM, SZ and AS",IDC_STATIC,40,25,132,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    ICON            IDI_ICON1,IDC_STATIC,11,17,20,20
+END
+
+IDD_MY2DMD_SIMLATE_DIALOG DIALOGEX 0, 0, 845, 455
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "2DMD MULTICHANNEL RESPONSE SIMULATION 2013"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,711,7,124,14
+    PUSHBUTTON      "A1.load data files (1C)",IDC_LOADINPUT,6,7,79,16
+    EDITTEXT        IDC_InFilename,97,9,62,14,ES_AUTOHSCROLL
+    LTEXT           "<< filename",IDC_STATIC,163,11,43,10
+    EDITTEXT        IDC_InFirstN,127,26,41,12,ES_AUTOHSCROLL
+    LTEXT           "first n >>",IDC_STATIC,96,27,32,10
+    LTEXT           "last n >>",IDC_STATIC,95,40,30,11
+    EDITTEXT        IDC_InLastN,127,39,41,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "A2.filter images (1C)",IDC_FILTER,6,24,79,15
+    PUSHBUTTON      "A3.mot response (1C)",IDC_MOTION,6,41,79,16
+    LTEXT           "EMD output gain",IDC_STATIC,291,49,54,8
+    EDITTEXT        IDC_InGainEMD,348,47,40,12,ES_AUTOHSCROLL
+    LTEXT           "input filter gain",IDC_STATIC,299,8,46,8
+    EDITTEXT        IDC_InGainDOG,348,7,40,12,ES_AUTOHSCROLL
+    LTEXT           "EMD sampling base",IDC_STATIC,173,26,64,8
+    LTEXT           "EMD time constant",IDC_STATIC,173,38,61,8
+    EDITTEXT        IDC_InDistEMD,237,23,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InTimcEMD,237,36,18,12,ES_AUTOHSCROLL
+    LTEXT           "preprocessing NL",IDC_STATIC,436,8,56,8
+    LTEXT           "EMD balance",IDC_STATIC,436,49,44,8
+    LTEXT           "DOG centre gain",IDC_STATIC,436,36,54,8
+    LTEXT           "DOG centre width ratio",IDC_STATIC,436,22,73,8
+    EDITTEXT        IDC_InPreproNL,392,7,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InSizeDOG,392,20,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InCentAmpDOG,392,34,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InBalanEMD,392,47,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "B1.Full Sim  (MC no disp of filt outputs)",IDC_SIMULATE,711,19,124,15,BS_VCENTER | BS_MULTILINE
+    EDITTEXT        IDC_InDistEMD2,257,23,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InDistEMD3,277,23,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InDistEMD4,299,23,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InTimcEMD2,257,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InTimcEMD3,277,36,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InTimcEMD4,299,36,20,12,ES_AUTOHSCROLL
+    LTEXT           "1 (1C)",IDC_STATIC,237,14,19,8,SS_CENTERIMAGE
+    LTEXT           "2",IDC_STATIC,263,15,8,8,SS_CENTERIMAGE
+    LTEXT           "3",IDC_STATIC,282,15,8,8,SS_CENTERIMAGE
+    LTEXT           "4",IDC_STATIC,305,14,8,8,SS_CENTERIMAGE
+    LTEXT           "Combo - Params:",IDC_STATIC,538,20,54,8
+    EDITTEXT        IDC_Inedge_thr,581,28,26,12,ES_AUTOHSCROLL
+    LTEXT           "Edge Thresh:",IDC_STATIC,537,29,44,8
+    PUSHBUTTON      "B2.Display (MC combined)",IDC_DISPCOMBO,711,47,124,14
+    EDITTEXT        IDC_STATUS_FILT,274,403,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STATUS_LOAD,274,387,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STATUS_MOT,274,419,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STATUS_COMB,274,434,60,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Image sequence",IDC_STATIC,210,387,64,13
+    LTEXT           "Filtered sequence",IDC_STATIC,210,403,64,13
+    LTEXT           "Motion response",IDC_STATIC,210,419,64,13
+    LTEXT           "Combinations",IDC_STATIC,210,435,64,13
+    EDITTEXT        IDC_DIRECTION,581,43,26,14,ES_AUTOHSCROLL
+    LTEXT           "0 = Forward             1 = Reverse",IDC_STATIC,525,41,56,16
+    EDITTEXT        IDC_MAXNORM,371,27,16,12,ES_AUTOHSCROLL
+    LTEXT           "Max Normalise",IDC_STATIC,323,28,48,11
+    EDITTEXT        IDC_ENDY,314,373,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTY,314,358,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDX,293,373,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTX,294,358,20,14,ES_AUTOHSCROLL
+    LTEXT           "Region Of Interest Coordinates",IDC_STATIC,236,349,106,8
+    LTEXT           "Start Point (x | y)",IDC_STATIC,238,361,53,11
+    LTEXT           "End point (x | y)",IDC_STATIC,238,375,53,8
+    PUSHBUTTON      "B2.Disp (MC channels-not in use)",IDC_DISPMCALL,711,33,124,14
+    LTEXT           "(Above for 1C and MC)",IDC_STATIC,352,60,80,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "2DMD_SIMLATE MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "2DMD_SIMLATE"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "2DMD_SIMLATE.EXE"
+            VALUE "ProductName", "2DMD_SIMLATE Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY2DMD_SIMLATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 835
+        VERTGUIDE, 85
+        VERTGUIDE, 275
+        VERTGUIDE, 432
+        VERTGUIDE, 711
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 448
+        HORZGUIDE, 57
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About 2DMD_SIMLATE..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\2DMD_SIMLATE.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "icon1.ico"
+IDI_ICON1               ICON                    "icon1.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\2DMD_SIMLATE.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

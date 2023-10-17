@@ -1,0 +1,12 @@
+Simulations details: simulations to test response outputs and histograms for transparent and segmented stimuli of standard parameters given below. All are compared to sine wave gratings at a given speed...
+
+file naming protocols
+T#***, transparent with opponent motions with directions 0, 90, 30 and 45. 
+S#***, segmented in the middle with opponent motions with directions 0, 90, 30 and 45.
+SNA-C#***, sine ways of wavelength 8, 16 and 32 pix (A-C) with motions directions 0, 90, 30 and 45.
+
+Number of dots: 256
+Stimulus size: 300 by 300 pixels
+Dot element size: 3 by 3 pixels
+std. speed: 2pix/frame
+temporal length: 25 frames... 
